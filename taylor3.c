@@ -2,6 +2,7 @@
 
 
 double calcula_ex(double x, int n);
+double calcula_ex_rec (double x, int n, int i, double termo);
 
 int main () {
   double x;
@@ -10,7 +11,7 @@ int main () {
   printf("Digite x e a quantidade de termos n: ");
   scanf("%lf%d", &x, &n);
 
-  double ex = calcula_ex(x,n);
+  double ex = calcula_ex_rec(x,n,0,1);
   
   printf("e elevado a %.0lf = %.15lf\n", x, ex);
 
@@ -27,3 +28,13 @@ double calcula_ex(double x, int n) {
   }
   return resultado;
 }
+
+double calcula_ex_rec (double x, int n, int i, double termo) {
+  if (i <= n) {
+    return termo + calcula_ex_rec(x, n, i+1, termo*x/(i+1));
+  }
+  else {
+    return 0;
+  }
+}
+
