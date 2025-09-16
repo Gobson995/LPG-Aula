@@ -1,0 +1,10 @@
+Anotações da aula 16/09/2025
+
+- Na aula ele explicou sobre usar funções em arquivos separados da main...
+- É bem simples: o .h é onde fica o cabeçalho das funções
+                   .c (sem ser a main) é onde fica as funções
+                 para linkar o .c com o .h basta escrever: #include "NOME-DO-ARQUIVO.h" em todos os .c
+                 quando for executar basta compilar com gcc NOME-DA-MAIN OUTRO-ARQUIVO...
+                 quando se executa um .c ele vira um .o que é onde fica o código em binario
+                 tem pessoas que vendem o .h e o .o para as pessoas não acessarem o .c
+
