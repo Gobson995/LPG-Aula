@@ -8,8 +8,11 @@ int fibo (int n) {
     return 1;
   }
   
-  if (v[n-1] == 0) {
-    v[n-1] = fibo(n-1) + fibo(n-2);
+  v[0] = 1;
+  v[1] = 1;
+
+  for (int i = 2; i < n; i++) {
+    v[i] = v[i-1] + v[i-2];
   }
   return v[n-1];
 }
