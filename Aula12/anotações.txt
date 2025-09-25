@@ -1,0 +1,15 @@
+- Strings são vetores (ou ponteiros) de caracteres
+- \0 marca o final do vetor (o que vier depois é lixo)
+
+scanf ("%s", string);
+
+- Não precisa colocar o &
+
+- Inicialização de stings:
+  char nome1[]= {'a','b'...}
+  char nome2[]= "abcde..."
+
+- Se o nome for "maria", ele tem 6 de capacidade, pode causa do "\0"
+
+- sizeof() retorna o tamanho do vetor (numero de bits que ele tem), sempre contando com o '\0' (quantos bits ocupam)
+- strlen() retorna o numero de caracteres que o vetor tem (conteudo)
