@@ -1,0 +1,5 @@
+Biblioteca string.h:
+– strlen() – conta a quantidade de caracteres;
+– strcpy() – atribuição de strings; 
+– strcmp() – comparação entre strings;
+– strcat() – concatenação de strings;
