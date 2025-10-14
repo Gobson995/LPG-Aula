@@ -1,0 +1,5 @@
+Tipos de entrada:
+- scanf("%s", x);
+- gets(x);
+- fgets(x, 50, stdin); x[strlen(x) - 1] = 0; // remove '\n' no final
+- scanf("%[^\n]", x); \\ expressão regular que reconhece qualquer caractere, exceto o '\n'.
