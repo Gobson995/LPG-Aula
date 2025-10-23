@@ -1,0 +1,8 @@
+Ponteiros e Vetores
+- Endereço de memória
+- Vetor é um ponteiro imutável, não pode ser modificado
+- v = &v = &v[0]
+
+- &v[i]<-> v+1
+- v[i] <-> *(v+1)            todos esses funcionam
+- *(i+v) <-> i[v]
