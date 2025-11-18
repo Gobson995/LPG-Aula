@@ -1,0 +1,24 @@
+Anotações:
+
+- Typedef -> Forma de estrutura mas não precisa ficar escrevendo struct toda vez que quiser chamar a estrutura.
+- Exemplo: 
+          // Sem typedef
+          struct Aluno {
+              int matricula;
+              char nome[50];
+          }; 
+
+          // Declaração de variável
+          struct Aluno aluno1;
+
+          // Com typedef
+          typedef struct {
+              int matricula;
+              char nome[50];
+          } Aluno;
+
+          // Declaração de variável (agora mais simples)
+          Aluno aluno2;
+
+- Manipulação de arquivos (vai ser usado no trabalho)
+- FILE *f = fopen("produtos.txt", "wt");
