@@ -14,7 +14,7 @@ char *repetidor (char *s, int n) {
     }
   }
 
-  p[n*strlen(s)+1] = "\0";
+  p[n*strlen(s)+1] = 0;
 
   return p;
 }
@@ -24,6 +24,7 @@ int main () {
   scanf("%d", &n);
 
   char s[n];
+  scanf("%s", s);
 
   int k; 
   scanf("%d", &k);

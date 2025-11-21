@@ -14,9 +14,11 @@ float *clone (float *v, int n) {
 
 int main () {
   int n;
-  float v[n];
+  
 
   scanf("%d", &n);
+
+  float v[n];
 
   for(int i = 0;i < n;i++){
     scanf("%f", &v[i]);
