@@ -11,17 +11,16 @@ void max_vetor(float vec[], int tam, float *pMax, int *pIndice){
 }
 
 int main () {
-  int n = 5;
-  float v[n], pMax, pIndice;
+  int n = 5, pIndice = 0;
+  float v[n], pMax;
 
   for(int i = 0; i < n; i++){
     scanf("%f", &v[i]);
   }
   pMax = v[0];
-  pIndice = 0;
 
   max_vetor(v, n, &pMax, &pIndice);
-  printf("O maior valor é %f e o índice é %d \n", pMax, pIndice);
+  printf("O maior valor é %f e o índice é %d (começa em 0)\n", pMax, pIndice);
 
 
 }
